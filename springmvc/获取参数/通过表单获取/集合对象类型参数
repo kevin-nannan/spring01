@@ -1,0 +1,16 @@
+1.controller  //Peos.java为 List<People> peo
+@RequestMapping("demo")
+        public String demo(Peos peo) {
+                System.out.println(peo);
+                return "main.jsp";
+        }
+2.JSP
+<form action="demo" method="post">
+    name:<input name="peo[0].name" type="text" >
+    age:<input name="peo[0].age" type="text" >   
+    name:<input name="peo[1].name" type="text" >
+    age:<input name="peo[1].age" type="text" > 
+    name:<input name="peo[2].name" type="text" >
+    age:<input name="peo[2].age" type="text" > 
+    <input type="submit" value="tijiao">
+</form>        
