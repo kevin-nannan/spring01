@@ -1,0 +1,9 @@
+1.controller中
+@RequestMapping（“demo”）
+public String demo(People peo) {
+  retrun "main.jsp"
+}
+
+2.jsp中
+<input type="text" name="peo.name"/>
+<input type="text" name="peo.age"/>
