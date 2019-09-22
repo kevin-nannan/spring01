@@ -1,0 +1,20 @@
+1.如果请求参数名和方法参数名不一致
+@RequestMapping（“demo”）
+public String demo(@RequestParam(value="name1")String name,@RequestParam(value="age1")int age){   //value=name1 表示表单中的值存在name1中
+  syso(name +age);
+  return "main.jsp";
+}
+
+2.设置默认值防止没有参数时 报错500
+@RequestMapping（“demo”）
+public String demo(@RequestParam(defaultValue="2")String name,@RequestParam(defaultValue="1")int age){   //默认值为1，2
+  syso(name +age);
+  return "main.jsp";
+}
+
+3.强制要有参数，必须存在
+@RequestMapping（“demo”）
+public String demo(@RequestParam(required=true)String name){   //name必须存在
+  syso(name);
+  return "main.jsp";
+}
