@@ -5,5 +5,6 @@ public String demo(People peo) {
 }
 
 2.jsp中
-<input type="text" name="peo.name"/>
-<input type="text" name="peo.age"/>
+<input type="text" name="name"/>
+<input type="text" name="age"/>
+一个对象可以直接调
