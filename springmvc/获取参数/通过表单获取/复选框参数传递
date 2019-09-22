@@ -1,0 +1,16 @@
+ 1.demo
+ @RequestMapping("demo")
+        public String demo(People peo,@RequestParam("honer")List<String> abc) {
+                System.out.println(peo.name+"  dfd  "+peo.age+" aihao:"+abc);
+                return "main.jsp";
+        }
+2.main.jsp
+<form action="demo" method="post">
+    name:<input name="name" type="text" >
+    age:<input name="age" type="text" >   
+    <input type="checkbox" value="爱好" name="honer">
+    <input type="checkbox" value="睡觉" name="honer">
+    <input type="checkbox" value="学习" name="honer">
+    <input type="submit" value="tijiao">
+    
+</form>
